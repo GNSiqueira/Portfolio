@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #13b9b6;
+    --segundary-color: #474747;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.navbar .pages {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.navbar .pages a{
+    color: var(--segundary-color);
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar > .pages > a:hover {
+    transform: scale(1.2);
+    color: white;
+    transition: 0.2s;
+}
+
+.navbar h1 {
+    font-family: "Kolker Brush", cursive;
+    font-size: 80px;
+    margin-left: 6%;
+    color: var(--segundary-color);
+    position: relative;
+    /* animation: flutuar 2s ease-in-out infinite alternate;
+        Executa a anumação sendo o primeiro parametro(funcão da animação), segundo(duração da animação), terceiro(como ela vai se comportar, no caso ela vai começar rápido lenta no meio e voltar a ficar rápida no final), quarto(fazer ela executar infinitamente), quinto(quando ela chegar no 100% voltar da mesma forma que ela foi)*/
+}
+
+/* A ANIMAÇÃO */
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 250px;
+    }
+}
+
+.navbar > h1 > strong {
+    color: var(--primary-color);
+}
+
+.navbar > a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    margin-right: 6%;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 30px;
+    background: var(--primary-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 0.2s;
+}
+
+.navbar > a:hover {
+    box-shadow: 0px 0px 10px var(--primary-color);
+    transform: scale(1.01);
+}
