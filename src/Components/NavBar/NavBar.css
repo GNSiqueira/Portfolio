@@ -1,78 +1,170 @@
-@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap'); 
 
 :root {
-    --primary-color: #13b9b6;
-    --segundary-color: #474747;
+    --color-gray: #474749;
+    --color-white: white;
+    --font-plus: "Plus Jakarta Sans", sans-serif;
 }
 
 .navbar {
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
-    font-size: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
 }
 
-.navbar .pages {
+.navbar h1 a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: var(--font-plus);
+    font-size: 40px;
+    font-weight: 400;
+    transition: font-weight 0.5s;
+    position: relative;
+}
+
+.navbar h1 a::after {
+    content: "";                  /*fala que não tem conteúdo dentro dele*/
+    position: absolute;           /*fala que a posição dele é de acordo com o elemento pai*/
+    bottom: 0;                    /*fala que do topo do elemento pai não vai ter nenhum espaço entre eles*/
+    left: 50%;                    /*fala que do canto esquerdo vai ter um espaço de 50 % do elemeto pai*/
+    width: 0;                     /*define a largura como 0*/
+    height: 2px;                  /*defile a altura como 2pixel*/
+    background: #fff;           /*cor de fundo*/
+    transform: translateX(-50%);  /*coloca o começo da tansição no meio e divide metade pra cada lado*/
+    transition: all 0.5s;         /*coloca um periodo de tempo para conluir*/
+}
+
+.navbar h1 a:hover::after{
+    width: 100%;
+}
+
+.navbar h1 a:hover {
+    font-weight: 600;
+}
+
+.navbar .pages ul {
+    list-style: none;
     display: flex;
     gap: 3rem;
-    align-items: center;
 }
 
-.navbar .pages a{
-    color: var(--segundary-color);
-    font-family: "Poppins", sans-serif;
+.navbar .pages ul li a{
     text-decoration: none;
-    padding: 10px;
-}
-
-.navbar > .pages > a:hover {
-    transform: scale(1.2);
-    color: white;
-    transition: 0.2s;
-}
-
-.navbar h1 {
-    font-family: "Kolker Brush", cursive;
-    font-size: 80px;
-    margin-left: 6%;
-    color: var(--segundary-color);
+    color: var(--color-white);
+    font-family: var(--font-plus);
+    font-size: 20px;
+    font-weight: 300;
+    padding: 7px;
+    border: 0;
     position: relative;
-    /* animation: flutuar 2s ease-in-out infinite alternate;
-        Executa a anumação sendo o primeiro parametro(funcão da animação), segundo(duração da animação), terceiro(como ela vai se comportar, no caso ela vai começar rápido lenta no meio e voltar a ficar rápida no final), quarto(fazer ela executar infinitamente), quinto(quando ela chegar no 100% voltar da mesma forma que ela foi)*/
+    transition: font-weight 0.5s;
 }
 
-/* A ANIMAÇÃO */
-@keyframes flutuar{
-    0%{
-        top: 0;
-    }
-    100%{
-        top: 250px;
-    }
-}
-
-.navbar > h1 > strong {
-    color: var(--primary-color);
-}
-
-.navbar > a {
+.navbar .pages ul li a {
+    position: relative;
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    margin-right: 6%;
-    color: black;
-    padding: 10px;
-    font-weight: bold;
-    border-radius: 30px;
-    background: var(--primary-color);
-    padding-left: 30px;
-    padding-right: 30px;
-    transition: 0.2s;
+    color: var(--color-white);
+    font-family: var(--font-plus);
+    font-size: 20px;
+    font-weight: 300;
+    padding: 7px;
+    border: 0;
+    transition: font-weight 0.5s;
 }
 
-.navbar > a:hover {
-    box-shadow: 0px 0px 10px var(--primary-color);
-    transform: scale(1.01);
+.navbar .pages ul li a:hover {
+font-weight: 500;
+}
+
+.navbar .pages ul li a::after { /*cria um elemento dentro do seletor*/
+content: "";                  /*fala que não tem conteúdo dentro dele*/
+position: absolute;           /*fala que a posição dele é de acordo com o elemento pai*/
+top: 0;                       /*fala que do topo do elemento pai não vai ter nenhum espaço entre eles*/
+left: 50%;                    /*fala que do canto esquerdo vai ter um espaço de 50 % do elemeto pai*/
+width: 0;                     /*define a largura como 0*/
+height: 2px;                  /*defile a altura como 2pixel*/
+background: #fff;           /*cor de fundo*/
+transform: translateX(-50%);  /*coloca o começo da tansição no meio e divide metade pra cada lado*/
+transition: all 0.5s;         /*coloca um periodo de tempo para conluir*/
+}
+
+.navbar .pages ul li a:hover::after {
+width: 100%;                  /*define o a largura como 100% quando passa o mouse por cima*/
+}
+
+.navbar .contact {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--color-white);
+    font-family: var(--font-plus);
+    font-size: 22px;
+    font-weight: 300;
+    border: 1px solid red;
+    width: 110px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    position: relative;
+    border-radius: 15px;
+}
+
+.navbar .contact span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .contact:after,
+.navbar .contact span:after,
+.navbar .contact span::before,
+.navbar .contact::before {
+    content: "";
+    position: absolute;
+    background-color: var(--color-white);
+    width: 0;
+    height: 0;
+    transition: all 0.3s;
+}
+
+
+.navbar .contact:after {
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 0;
+}
+.navbar .contact span:after {
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 0;
+}
+.navbar .contact span:before {
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+}
+.navbar .contact:before {
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 0;
+}
+.navbar .contact:hover:after {
+    width: 100%;   
+}
+.navbar .contact span:hover:after {
+    height: 100%;
+}
+.navbar .contact span:hover:before {
+    width: 100%;
+}
+.navbar .contact:hover:before {
+    height: 100%;
 }
