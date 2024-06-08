@@ -13,17 +13,15 @@ export default function Home() {
             <div className="content">
                 <section className="container">
                     <div className="escrita">
-                        <div>
-                            <h3>Meu nome é Gabriel Neto e,</h3>
-                            <h2>SOU PROGRAMADOR.</h2>
-                            <p>Seja bem-vindo ao meu portifólio website!</p>
-                            <a><button>Saiba mais sobre mim!</button></a>
-                        </div>
-                        <div className="icones">
-                            <a href="#"><img src={github} alt="github"/></a>
-                            <a href="#"><img src={linkedin} alt="linkedin"/></a>
-                            <a href="#"><img src={instagram} alt="instagram"/></a>
-                        </div>
+                            <span>Olá, seja bem-vindo</span>
+                            <h2><span>BACK-END  </span>   DEVELOPER</h2>
+                            <p>Desenvolvo soluções de backend sob medida para impulsionar a performance e a eficiência de sua aplicação. Com expertise em tecnologias de ponta, transformo conceitos em códigos robustos e escaláveis, garantindo uma base sólida para o sucesso de seu projeto. Confie em minha experiência para levar sua empresa além do esperado no mundo digital.</p>
+                            <a href="#"><button className="botao">Entre em contato!</button></a>
+                            <div className="icones">
+                                <a href="#"><img src={github} alt="github"/></a>
+                                <a href="#"><img src={linkedin} alt="linkedin"/></a>
+                                <a href="#"><img src={instagram} alt="instagram"/></a>
+                            </div>
                     </div>
                 </section>
                 <section className="foto">
