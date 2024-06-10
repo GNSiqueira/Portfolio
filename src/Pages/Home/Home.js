@@ -8,7 +8,7 @@ import instagram from '../../assets/instagram.png'
 
 export default function Home() {
     return(
-        <div className="body">
+        <div className="home">
             <NavBar/>
             <div className="content">
                 <section className="container">

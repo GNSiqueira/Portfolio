@@ -7,7 +7,7 @@
     --font-plus: "Plus Jakarta Sans", sans-serif;
 }
 
-.body {
+.home {
     background: url("../../assets/fundo.png");
     height: 100vh;
     background-size: cover;
