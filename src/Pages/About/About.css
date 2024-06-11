@@ -10,6 +10,7 @@
   justify-content: center;
   margin-left: 20%;
   margin-right: 20%;
+  position: relative;
 }
 .about > .content p, .about > .content h2 {
   margin: 0;
@@ -18,18 +19,29 @@
   color: white;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-.about > .content p:nth-child(2) {
+.about > .content h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+.about > .content h2 span {
+  color: rgb(0, 255, 34);
+}
+.about > .content p:nth-of-type(1) {
   margin-top: 50px;
 }
 .about > .content p {
   text-align: justify;
   font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 30px;
 }
-.about > .content h2 {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  text-align: center;
-}
-.about > .content .img1 {
+.about > .content p img {
   width: 30%;
   float: right;
+  margin-left: 20px;
+}
+.about > .content p img:nth-of-type(2) {
+  width: 30%;
+  float: left;
+  margin-right: 20px;
 }/*# sourceMappingURL=About.css.map */
