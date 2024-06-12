@@ -6,7 +6,12 @@ export default function Portfolio() {
     return (
         <div className="portfolio">
             <NavBar />
-            <h1>Portfolio</h1>
+            <section>
+                <div>
+                    <img src="" alt=""/>
+                    <p>Primeiro teste de card pra portfolio</p>
+                </div>
+            </section>
         </div>
     );
 }
