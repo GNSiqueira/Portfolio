@@ -14,7 +14,7 @@ export default function Home() {
                 <section className="container">
                     <div className="escrita">
                             <span>Olá, seja bem-vindo</span>
-                            <h2><span>BACK-END  </span>   DEVELOPER</h2>
+                            <h2>BACK-END DEVELOPER</h2>
                             <p>Desenvolvo soluções de backend sob medida para impulsionar a performance e a eficiência de sua aplicação. Com expertise em tecnologias de ponta, transformo conceitos em códigos robustos e escaláveis, garantindo uma base sólida para o sucesso de seu projeto. Confie em minha experiência para levar sua empresa além do esperado no mundo digital.</p>
                             <a href="https://wa.me/5517997822073" target='_blank' ><button className="botao">Entre em contato!</button></a>
                             <div className="icones">

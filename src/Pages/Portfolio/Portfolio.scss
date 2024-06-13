@@ -2,9 +2,40 @@
 
 .portfolio{
     background-color: $color-black;
-    height: 100vh;
-    
-    > section {
-        
+    height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    > main {
+        flex-grow: 1;
+        align-content: center;
+        position: relative;
+        > section {
+            display: flex;
+            justify-content: center;
+            padding-inline: 30px;
+            > .card {
+                margin-inline: 10px;
+                flex: 1;
+                position: relative;
+                height: 750px;
+                background-color: $color-white;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: $font-plus;
+                overflow: hidden;
+                opacity: 0.5;
+                transition: all 0.8s;
+                &:hover {
+                    opacity: 1;
+                    flex: 10;
+                }
+                > img {
+                    size: 100%;
+                }
+            }
+        }
     }
 }

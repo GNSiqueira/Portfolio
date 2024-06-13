@@ -2,4 +2,39 @@
 .portfolio {
   background-color: black;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio > main {
+  flex-grow: 1;
+  align-content: center;
+  position: relative;
+}
+.portfolio > main > section {
+  display: flex;
+  justify-content: center;
+  padding-inline: 30px;
+}
+.portfolio > main > section > .card {
+  margin-inline: 10px;
+  flex: 1;
+  position: relative;
+  height: 750px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow: hidden;
+  opacity: 0.5;
+  transition: all 0.8s;
+}
+.portfolio > main > section > .card:hover {
+  opacity: 1;
+  flex: 10;
+}
+.portfolio > main > section > .card > img {
+  size: 100%;
 }/*# sourceMappingURL=Portfolio.css.map */
