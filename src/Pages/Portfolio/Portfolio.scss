@@ -14,7 +14,7 @@
         > section {
             display: flex;
             justify-content: center;
-            padding-inline: 30px;
+            padding-inline: 80px;
             
             > .card {
                 margin-inline: 10px;
@@ -29,17 +29,46 @@
                 font-family: $font-plus;
                 overflow: hidden;
                 opacity: 0.5;
-                transition: all 0.8s;
+                transition: all 0.5s;
+                position: relative;
                 
+                > a {
+                    > img {
+                        height: 100%;
+                    }
+
+                    > .icone {
+                        position: absolute;
+                        bottom:20px;
+                        left: 20px;
+                        width: 50px;
+                        height: 50px;
+                        transition: all 0.4s ease-out;
+                    }
+
+                    > span {
+                        font-family: $font-plus;
+                        font-size: 30px;
+                        font-weight: bold;
+                        position: absolute;
+                        bottom: -30px;
+                        left: 80px;
+                        color: $color-white;
+                        text-shadow: 3px 3px 0 $color-black;
+                        opacity: 0;
+                        transition: all 0.3s ease-out;
+                    }
+                } 
                 &:hover {
                     opacity: 1;
                     flex: 10;
-                }
 
-                img {
-                    background-image: url("./../../assets/Portifolio/projetointegrador.png");
-                    height: 100%;
-                    object-fit: cover;
+                    span {
+                        opacity: 1;
+                        left: 80px;
+                        bottom: 28px;
+                        transition-delay: 0.3s;
+                    }
                 }
             }
         }
