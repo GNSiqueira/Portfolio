@@ -15,7 +15,7 @@
     padding-top: 2%;
 }
 
-.navbar h1 a{
+.navbar span a{
     text-decoration: none;
     color: var(--color-white);
     font-family: var(--font-plus);
@@ -25,7 +25,7 @@
     position: relative;
 }
 
-.navbar h1 a::after {
+.navbar span a::after {
     content: "";                  /*fala que não tem conteúdo dentro dele*/
     position: absolute;           /*fala que a posição dele é de acordo com o elemento pai*/
     bottom: 0;                    /*fala que do topo do elemento pai não vai ter nenhum espaço entre eles*/
@@ -37,11 +37,11 @@
     transition: all 0.5s;         /*coloca um periodo de tempo para conluir*/
 }
 
-.navbar h1 a:hover::after{
+.navbar span a:hover::after{
     width: 100%;
 }
 
-.navbar h1 a:hover {
+.navbar span a:hover {
     font-weight: 600;
 }
 

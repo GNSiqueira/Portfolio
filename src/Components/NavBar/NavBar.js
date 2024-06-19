@@ -3,7 +3,7 @@ import './NavBar.css';
 export default function NavBar(){
     return(
         <nav className='navbar'>
-            <h1><a href="/">GNS</a></h1>
+            <span><a href="/">GNS</a></span>
             <div className='pages'>
                 <ul>
                     <li><a href="/portfolio">Portfolio</a></li>
