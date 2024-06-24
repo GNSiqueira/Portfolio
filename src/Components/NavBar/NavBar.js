@@ -2,7 +2,7 @@ import './NavBar.css';
 
 export default function NavBar(){
     return(
-        <nav className='navbar'>
+        <nav className='navbar' id='topo'>
             <span><a href="/">GNS</a></span>
             <div className='pages'>
                 <ul>

@@ -1,0 +1,110 @@
+@import '../../../../../variavel';
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.body {
+    background-color: $color-black;
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3%;
+        padding-inline: 20%;
+        hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 93.5%;
+            height: 2px;
+            background-color: $color-white;
+            border: none;
+        }
+        .content {
+
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            h1 {
+                color: $color-white;
+                font-family: $font-plus;
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 20px;
+                margin-top: 30px;
+                text-align: justify;
+                color: $color-white;
+                font-family: $font-plus;
+            }
+
+            img {
+                width: 500px;
+                margin-top: 30px;
+            }
+        }
+
+        .ferramentas {
+            h2 {
+                color: $color-white;
+                font-family: $font-plus;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            div {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                gap: 7rem;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                img {
+                    flex: 1;
+                    max-width: 100px;
+                    border-radius: 20px;
+                    background-color: $color-white;
+                }
+            }
+        }
+
+        .links {
+
+            h2 {
+                color: $color-white;
+                font-family: $font-plus;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            div {
+                margin-bottom: 50px;
+                margin-top: 20px;
+                ul {
+                    li {
+                        color: $color-white;                        
+                        a {
+                            color: $color-white;
+                            font-size: 20px;
+                            font-family: $font-plus;
+                            text-decoration: none;
+                            &:hover {
+                                text-shadow: 2px 2px 4px $color-white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
